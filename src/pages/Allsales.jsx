@@ -23,7 +23,7 @@ const  Allsales = () => {
         <div className="my-10 ml-10 mr-8">
           {/* Header */}
           <div className=" lg:flex md:flex grid gap-5 items-center">
-            <h3 className="font-bold py-2">All-Users</h3>
+            <h3 className="font-bold py-2">All Sales</h3>
             <div className='flex gap-2'>
             <Link  to="/Standalonesales" className="border-blue-300 rounded-md border-2 lg:w-[150px]  md:w-[150px] w-[105px] h-[40px]  py-2 text-center font-semibold">
             Stand-alones

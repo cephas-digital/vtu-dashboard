@@ -28,9 +28,9 @@ const ChatArea = ({ contact, newMessage, setNewMessage, onSendMessage, messageEn
   }, {})
 
   return (
-    <div className="flex-1 flex flex-col h-full">
+    <div className="flex-1 flex flex-col h-full  bg-white rounded-md mr-5 ">
       {/* Header */}
-      <div className="flex justify-between items-center p-4 border-b border-gray-200">
+      <div className="lg:flex md:flex grid gap-2 justify-between items-center p-4 border-b   border-gray-200  lg:w-[750px] md:w-[450px] w-[250px]">
         <div className="flex items-center">
           <img src={contact.img} alt={contact.name} className="w-10 h-10 rounded-full mr-3" />
           <div>
@@ -41,13 +41,13 @@ const ChatArea = ({ contact, newMessage, setNewMessage, onSendMessage, messageEn
           </div>
         </div>
         <div className="flex space-x-2">
-          <button className="text-blue-600 text-sm font-medium">New Customer</button>
+          <button className="bg-[#95bc95] text-black text-sm font-medium rounded-md w-[100px]">New Customer</button>
           <button className="text-blue-600 text-sm font-medium">View Profile</button>
         </div>
       </div>
 
       {/* Chat messages */}
-      <div className="flex-1 overflow-y-auto p-4 bg-gray-50">
+      <div className="flex-1 overflow-y-auto p-4 lg:w-[720px] md:w-[450px] w-[250px]">
         {Object.entries(groupedMessages).map(([date, messages]) => (
           <div key={date}>
             <div className="flex justify-center my-4">
@@ -87,7 +87,7 @@ const ChatArea = ({ contact, newMessage, setNewMessage, onSendMessage, messageEn
       </div>
 
       {/* Message input */}
-      <div className="p-2 mt-[150px] h-[55px] border-2 border-[#eeeded] rounded-md bg-white">
+      <div className=" m-2 p-2 mt-[150px] h-[55px] border-2 border-[#eeeded] rounded-md  lg:w-[720px] md:w-[450px] w-[200px]">
         <div className="flex items-center">
           <button className="p-2 rounded-full text-gray-500 hover:bg-gray-100">
             <svg className="h-6 w-6 bg-[#e0e0f2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">

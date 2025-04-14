@@ -2,7 +2,7 @@
 
 const Sidebar = ({ contacts, selectedContact, onSelectContact, searchQuery, setSearchQuery }) => {
   return (
-    <div className="w-1/4 border-r border-gray-200 h-full flex flex-col  rounded-md">
+    <div className="lg:w-1/4 md:w-[150px] w-[300px] border-r border-gray-200 h-full flex flex-col  rounded-md">
       
 
       <div className="p-4 border-b border-gray-200 bg-white">

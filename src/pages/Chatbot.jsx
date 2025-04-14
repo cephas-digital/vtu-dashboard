@@ -12,17 +12,17 @@ const  Chatbot = () => {
 
 
   return (
-    <div className="flex bg-[#f8f7f7] min-h-screen">
+    <div className="flex min-h-screen">
       <Sidebar />
-      <div className="w-full relative left-20">
+      <div className="w-full relative lg:left-[200px] bg-gray-100 left-[320px] md:left-[170px]">
         <Admin />
-        <div className="my-5 ml-10 mr-8">
-            <div className='flex justify-between my-10'>
+        <div className="my-5 ml-10 ">
+            <div className='lg:flexmd:glex grid gap-2 justify-between my-10  lg:w-[1000px] md:w-[600px]   '>
                 <h3>Conversations with Customers</h3>
                 <button className='rounded-2xl bg-[#3C60FF] w-[150px] h-[30px] text-white '>New Message</button>
             </div>
           
-                <ChatInterface/>
+          <ChatInterface/>
  
 
 

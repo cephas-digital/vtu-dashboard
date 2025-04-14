@@ -165,7 +165,7 @@ const ChatInterface = () => {
   const filteredContacts = contacts.filter((contact) => contact.name.toLowerCase().includes(searchQuery.toLowerCase()))
 
   return (
-    <div className="flex h-full gap-8">
+    <div className="lg:flex md:flex grid  h-full lg:gap-8 md:gap-8 gap-2 ">
        <Chatbotsidebar
         contacts={filteredContacts}
         selectedContact={selectedContact}
