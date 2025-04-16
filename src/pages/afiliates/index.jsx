@@ -33,7 +33,7 @@ const Affiliates = () => {
         </Link>
         <Link
           to="/Standalones"
-          className="border-blue-300 rounded-md pl-4 border-2 lg:w-[650px] md:w-[390px] w-[120px] h-[40px] py-2 font-semibold"
+          className="border-blue-300 rounded-md pl-2 border-2 lg:w-[650px] md:w-[390px] w-[115px] h-[40px] py-2 font-semibold"
         >
           Stand-Alone
         </Link>
@@ -47,7 +47,7 @@ const Affiliates = () => {
     <div className="overflow-x-auto md:overflow-x-auto lg:overflow-x-hidden px-4">
 
         {/* Table Header */}
-        <div className="grid grid-cols-6 md:gap-10 lg:gap-10 gap-2 py-3 lg:w-[1150px] md:w-[1200px] w-[900px] px-5 rounded-md text-[grey] font-semibold">
+        <div className="grid grid-cols-6 md:gap-10 lg:gap-10 gap-2 py-3 lg:w-[1150px] md:w-[1200px] w-[950px] px-5 rounded-md text-[grey] font-semibold">
           <h3 className="text-left">Name</h3>
           <h3 className="text-left l">Email address</h3>
           <h3 className="text-left ">Phone number</h3>
@@ -59,7 +59,7 @@ const Affiliates = () => {
         {users.map((user, index) => (
           <div
             key={index}
-           className="grid grid-cols-6 items-center md:gap-10 lg:gap-10 gap-2 lg:w-[1150px] md:w-[1200px] w-[900px] rounded-s-2xl bg-[#fdfdfd] my-1 px-5 py-3"
+           className="grid grid-cols-6 items-center md:gap-10 lg:gap-10 gap-2 lg:w-[1150px] md:w-[1200px] w-[950px] rounded-s-2xl bg-[#fdfdfd] my-1 px-5 py-3"
           >
             <div className="flex items-center gap-2">
               <img src={userIcon} alt="User" className="w-[30px] h-[30px]" />

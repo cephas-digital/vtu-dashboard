@@ -41,17 +41,17 @@ const Allmessages = () => {
         </div>
         <div className="overflow-auto md:overflow-auto lg:overflow-hidden whitespace-nowrap mx-5">
         
-          <div className="grid  grid-cols-6 py-3 lg:w-[1050px] md:w-[1200px] w-[900px] px-5 rounded-md text-[grey] font-semibold">
+          <div className="grid grid-cols-6 py-3 lg:w-[1050px] md:w-[1200px] w-[1050px] px-5 rounded-md text-[grey] font-semibold">
             <h3 className="text-left">Sender</h3>
             <h3 className="text-left">Type</h3>
             <h3 className="text-left">Message Title</h3>
             <h3 className="text-left">Sender Email address</h3>
-            <h3 className="text-left">Date Sent</h3>
+            <h3 className="text-left ">Date Sent</h3>
             <h3 className="text-left ">Actions</h3>
           </div>
 
           {users.map((user, index) => (
-            <div key={index} className="grid grid-cols-6 lg:w-[1050px] md:w-[1200px] w-[900px]  items-center rounded-s-2xl bg-[#fdfdfd] my-1 px-5 py-3">
+            <div key={index} className="grid grid-cols-6 lg:w-[1050px] md:w-[1200px] w-[1050px]  items-center rounded-s-2xl bg-[#fdfdfd] my-1 px-5 py-3">
               <div className="flex items-center gap-2">
                 <img src={userIcon} alt="User" className="w-[20px] h-[20px]" />
                 <h3>{user.name}</h3>
@@ -59,7 +59,7 @@ const Allmessages = () => {
               <h3>{user.Type}</h3>
               <h3>{user.Title}</h3>
               <h3>{user.email}</h3>
-              <h3>{user.dateJoined}</h3>
+              <h3 >{user.dateJoined}</h3>
               <h3 onClick={handleAttend} className="text-[#3C60FF] cursor-pointer">Attend to message</h3>
             </div>
           ))}

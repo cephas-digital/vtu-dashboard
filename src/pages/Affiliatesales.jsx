@@ -19,7 +19,7 @@ const [users, setUsers] = useState([]);
   return (
     <div className="flex bg-[#f8f7f7] min-h-screen">
       <Sidebar />
-      <div className="w-full relative lg:left-[200px] left-20 md:left-20">
+      <div className="w-full relative lg:left-[200px] left-[70px] md:left-20">
         <Admin />
         <div className="my-10 ml-10 mr-8">
           {/* Header */}

@@ -94,21 +94,20 @@ const ChatArea = ({ contact, newMessage, setNewMessage, onSendMessage, messageEn
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
             </svg> 
           </button>
-          <div className="flex mx-2  ">
+          <div className="flex ">
             <input
               type="text"
               placeholder="Your message..."
-              className="w-[850px] rounded-md focus:outline-none  "
+              className="lg:w-[565px] md:w-[280px] w-[80px] rounded-md focus:outline-none   "
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               onKeyDown={handleKeyDown}
             />
-            <button className="p-2 rounded-md absolut flex gap-5  bg-[#c6fff1] w-[100px] h-[40px] text-white " onClick={onSendMessage}>
+           <button className="p-2 rounded-md  flex gap-5  bg-[#c6fff1] l:w-[100px] md:w-[100px] w-[60px] h-[40px] text-white " onClick={onSendMessage}>
               <h3 className="text-black">Send</h3>
-            <svg className="h-5 w-5 text-black  " viewBox="0 0 24 24" fill="currentColor">
-              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-            </svg>
-          </button>
+              <ion-icon name="send-outline" className="text-black" ></ion-icon>
+          </button> 
+        
           </div>
           
         </div>

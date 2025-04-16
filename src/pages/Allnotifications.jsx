@@ -48,7 +48,7 @@ const Allnotifications = () => {
             <h3 className="text-left">Sender</h3>
             <h3 className="text-left">Sent to</h3>
             <h3 className="text-left">Title</h3>
-            <h3 className="text-left"> Sender Email address</h3>
+            <h3 className="text-left "> Sender Email Address</h3>
             <h3 className="text-left">Date Sent</h3>
             <h3 className="text-left">Actions</h3>
           </div> 

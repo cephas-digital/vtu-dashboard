@@ -47,7 +47,8 @@ const Sidebar = () => {
       onClick={handleClick} // Toggle sidebar on double-click
       className={`fixed z-10 top-0 left-0 min-h-screen py-10 bg-white transition-all duration-300 ease-in-out 
         ${isOpen ? 'fixed' : 'translate-x-0'} 
-        md:translate-x-0 lg:translate-x-0`}
+        md:${isOpen ? 'fixed' : 'translate-x-0'} 
+         lg:translate-x-0`}
     >
       <div className="flex justify-center pb-16">
         <img src={logo} alt="" className="w-[60px] h-[60px]" />

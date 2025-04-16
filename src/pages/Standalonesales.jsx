@@ -18,7 +18,7 @@ const Standalonesales = () => {
   return (
     <div className="flex bg-[#f8f7f7] min-h-screen">
       <Sidebar />
-      <div className="w-full relative lg:left-[200px] md:left-10 left-10">
+      <div className="w-full relative lg:left-[200px] md:left-10 left-[70px]">
         <Admin />
         <div className="my-10 ml-10 mr-8">
           {/* Header */}
