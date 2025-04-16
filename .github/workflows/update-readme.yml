@@ -1,0 +1,56 @@
+name: Update README
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    env:
+      GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+      GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Display Current Branch
+      run: |
+        echo "Current branch: ${GITHUB_REF##*/}"
+
+    - name: Modify README Section Based on Branch
+      run: |
+        BRANCH_NAME=$(echo "${GITHUB_REF#refs/heads/}")
+        
+        if [ "$BRANCH_NAME" = "main" ]; then
+          BRANCH_INFO="## 📌 Production Branch (main) - Last Updated: $(date)"
+        elif [ "$BRANCH_NAME" = "master" ]; then
+          BRANCH_INFO="## 🔨 Development Branch (master) - Last Updated: $(date)"
+        elif [ "$BRANCH_NAME" = "website" ]; then
+          BRANCH_INFO="## 🚧 Staging Branch (website) - Last Updated: $(date)"
+        else
+          BRANCH_INFO="## 🌱 Feature Branch ($BRANCH_NAME) - Last Updated: $(date)"
+        fi
+
+        START_MARKER="<!-- BRANCH-INFO-START -->"
+        END_MARKER="<!-- BRANCH-INFO-END -->"
+
+        sed -i "/$START_MARKER/,/$END_MARKER/c\\$START_MARKER\n$BRANCH_INFO\n$END_MARKER" README.md
+
+    - name: Commit changes
+      run: |
+        git config --global user.name "${{ env.GIT_USER_NAME }}"
+        git config --global user.email "${{ env.GIT_USER_EMAIL }}"
+        git add README.md
+        git commit -m "Update branch info in README from GitHub Actions on branch ${BRANCH_NAME}" || echo "No changes to commit"
+
+    - name: Push changes
+      run: git push origin HEAD
