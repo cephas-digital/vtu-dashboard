@@ -28,7 +28,7 @@ const Message = ({ closeOverlay, showAction }) => {
         <div className="my-3">
           <textarea
             placeholder="Message"
-            className="outline-none rounded-md w-[370px] h-[242px] p-3 bg-[#EFF1F999]"
+            className="outline-none rounded-md lg:w-[370px] md:w-[370px] w-[240px] h-[242px] p-3 bg-[#EFF1F999]"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>

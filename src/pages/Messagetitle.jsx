@@ -17,27 +17,28 @@ const Messagetitle = ({ closeOverlay, openReply }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white w-[500px] lg:h-[600px] md:h-[750px] h-[720px] rounded-md p-10 relative">
+      <div className="bg-white w-[500px] lg:h-[600px] md:h-[750px] h-[600px] rounded-md p-10 relative">
         <img
           src={closeIcon}
           onClick={closeOverlay}
           className="w-[32px] h-[32px] cursor-pointer absolute top-4 right-4"
           alt="Close"
         />
-        <div className="lg:my-0 md:my-5 my-0">
+       <div className=" overflow-y-auto h-[500px] mt-5">
+       <div className="lg:my-0 md:my-5 my-2">
           <h3 className="font-bold text-2xl">Message Title</h3>
         </div>
-        <h3 className="lg:py-2 md:py-3 py-1">
+        <h3 className="lg:py-5 md:py-3 py-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illum,
           enim nesciunt dolor numquam necessit.
         </h3>
-        <h3 className="lg:py-2 md:py-5 py-0">
+        <h3 className="lg:py-5 md:py-3 py-2">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe fugit
           minus suscipit, maiores, consequatur tempore eveniet optio sit, iure
           possimus iusto aliquid? Rerum et ad sint officiis. Odio, modi
           nesciunt?
         </h3>
-        <h3 className="lg:py-2 md:py-5 py-0">
+        <h3 className="lg:py-5 md:py-3 py-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe fugit
           minus suscipit, maiores, consequatur tempore eveniet optio sit, iure
           possimus iusto aliquid? Rerum et ad sint officiis. Odio, modi
@@ -69,6 +70,9 @@ const Messagetitle = ({ closeOverlay, openReply }) => {
             </button>
           </div>
         </div>
+       </div>
+
+        
       </div>
     </div>
   );

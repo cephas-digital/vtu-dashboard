@@ -13,8 +13,7 @@ const PageRender = () => {
   const escape3 = [
     "login", "afiliates", "action", "Allusers", "Standalones",
     "Usersdetails", "Affiliateuserdetails", "Allsales", "Affiliatesales", "Standalonesales",
-    "Usertransactions", "Allnotifications", "Incomingnotifications", "Outgoingnotifications",
-     "Upgradesucess", "Allmessages", "Messagetitle", "Message", "Disableuser","Chatbot", "Settings",
+    "Usertransactions", "Allnotifications", "Incomingnotifications", "Outgoingnotifications", "Allmessages","Chatbot", "Settings",
       "Cms", "Security", "Manageuser", "Theme", "Resetpassword", "Alluserdetails", 
   ];
 

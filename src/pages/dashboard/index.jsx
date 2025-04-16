@@ -15,7 +15,7 @@ const  Allsales = () => {
   return (
     <div className="flex min-h-screen">
       <Sidebar />
-      <div className="w-full  bg-[#f8f7f7]  relative lg:left-[200px]  md:left-[65px] left-[65px] ">
+      <div className="w-full  bg-[#f8f7f7]  relative lg:left-[200px]  md:left-[70px] left-[65px] ">
         <Admin />
        
         <Dashboard />

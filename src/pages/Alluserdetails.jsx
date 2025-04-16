@@ -108,7 +108,7 @@ const Alluserdetails = () => {
 
           <div className='lg:flex md:grid md:grid-cols-4 grid grid-cols-1 gap-2 text-center'>
             <button
-              className='w-[160px]  h-[30px] border-2 border-[#3C60FFB2] rounded-md'
+              className='w-[150px]  h-[30px] border-2 border-[#3C60FFB2] rounded-md'
               onClick={handleShowNewNotification}
             >
               Send Notifications

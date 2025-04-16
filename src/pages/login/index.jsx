@@ -15,21 +15,21 @@ const Home = () => {
         alert("pls fill out all Details")
          return;
       }
-      alert("loggin in")
+      alert("logging in")
       console.log("logging in...");
 
     }
 
 
   return (
-    <div className =" bg-blue-700 w-full lg:min-h-screen md:min-h-screen min-h-[700px] fixed">
+    <div className =" bg-blue-700 w-full lg:min-h-[700px] md:min-h-screen min-h-[700px] fixed ">
        <Header/>
-      <div className="justify-self-center  bg-white lg:w-[400px]  md:w-[400px] w-[300px] lg:h-[600px] md:h-[600px] h-[540px] rounded-md  lg:m-10 md:m-20 m-5  p-8 ">
+      <div className="justify-self-center  bg-white lg:w-[400px]  md:w-[400px] w-[300px] lg:h-[530px] md:h-[600px] h-[540px] rounded-md  lg:m-5 md:m-20 m-5  p-8 ">
       
     
       
        <div className=" justify-self-center">
-        <img src={logo} alt="dummy" className="my-3 w-[40px] h-[40px]" /> 
+        <img src={logo} alt="logo" className="my-3 w-[40px] h-[40px]" /> 
        </div>
        <div className="text-center py-3"> 
         <h3 className="text-3xl pt-2 font-semibold">Welcome back</h3>

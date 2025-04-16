@@ -72,7 +72,7 @@ const Settings = () => {
             </button>
           </div>
 
-          <div className='flex gap-10'>
+          <div className='lg:flex md:flex grid gap-10'>
             {/* Left Form Fields */}
             <div>
               <div className='py-5'>

@@ -22,8 +22,9 @@ const Upgradesucess = ({onClose}) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white w-[500px] lg:h-[600px] md:h-[600px] h-[650px] rounded-md p-10 relative">
+      <div className="bg-white w-[500px] lg:h-[550px] md:h-[650px] h-[600px] rounded-md p-10 relative">
         <img src={closeIcon} onClick={onClose} className="w-[32px] h-[32px] cursor-pointer absolute top-5 right-5" alt="Close" />
+        <div className='overflow-x-auto lg:h-[450px] md:h-[450px] h-[500px] mt-5'>
         <h3 className="font-bold text-2xl my-5">Upgrade Success</h3>
         <p className="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illum, enim nesciunt dolor numquam necessit.</p>
         <p className="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe fugit minus suscipit, maiores, consequatur tempore eveniet optio sit, iure possimus iusto aliquid? Rerum et ad sint officiis. Odio, modi nesciunt?</p>
@@ -45,6 +46,7 @@ const Upgradesucess = ({onClose}) => {
               Okay
             </button>
           </div>
+        </div>
         </div>
       </div>
     </div>

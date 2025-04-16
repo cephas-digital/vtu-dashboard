@@ -87,7 +87,7 @@ const Sidebar = () => {
       </div>
 
       <div>
-        <div className="flex lg:gap-5 md:gap-3 gap-3 mt-[150px] mx-8 cursor-pointer" onClick={handleLogout}>
+        <div className="flex lg:gap-5 md:gap-3 gap-3 lg:mt-[80px] md:mt-[150px]  mt-20 mx-5 cursor-pointer" onClick={handleLogout}>
           <img src={Logout} alt="" className="w-[20px] h-[20px]" />
           {isOpen && <Link to="/login" className="text-[red]">Logout</Link>}
         </div>
