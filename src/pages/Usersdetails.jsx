@@ -31,7 +31,7 @@ const Usersdetails = () => {
   return (
     <div className="flex bg-[#F9F9FA] min-h-screen relative">
       <Sidebar />
-      <div className="w-full relative lg:left-[200px] md:left-20 left-20">
+      <div className="w-full relative lg:left-[200px] md:left-[62px] left-16">
         <Admin />
         <div className=" m-5 p-5">
           <div className="flex gap-5 font-bold">

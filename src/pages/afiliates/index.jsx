@@ -19,7 +19,7 @@ const Affiliates = () => {
     <div className="flex bg-[#f8f7f7] min-h-screen">
   <Sidebar />
 
-  <div className="flex-1 relative lg:left-[200px] md:left-20 left-20 overflow-hidden">
+  <div className="flex-1 relative lg:left-[200px] md:left-14 left-[62px]  overflow-hidden">
     <Admin />
 
     <div className="gap-5 items-center ml-10 mt-10">

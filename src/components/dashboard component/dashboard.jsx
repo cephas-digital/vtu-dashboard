@@ -70,8 +70,13 @@ export default function Dashboard() {
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-xl font-semibold">Overview</h1>  
             <select name="" id="" className="flex items-center text-md outline-none rounded-md px-3 py-1 lg:mr-5 md:mr-3 mr-[60px] ">
-              <option value="">Today</option>s
+              <option value="">Monday</option>
               <option value="">Tueday</option>
+              <option value="">Wednesday</option>
+              <option value="">Thursday</option>
+              <option value="">Friday</option>
+              <option value="">Saturday</option>
+              <option value="">Sunday</option>
             </select>
        
         </div>

@@ -29,7 +29,7 @@ const Cms = () => {
   return (
     <div className="flex bg-[#f8f7f7] min-h-screen">
       <Sidebar />
-      <div className="w-full relative lg:left-[200px] md:left-[70px] left-[70px]">
+      <div className="w-full relative lg:left-[200px] md:left-[62px] left-[62px] ">
         <Admin />
         <div className="my-10 ml-10 mr-8 bg-white p-10 w-full min-h-screen">
           {/* Header */}

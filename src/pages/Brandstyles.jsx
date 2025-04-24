@@ -34,7 +34,7 @@ const Brandstyles = () => {
   return (
     <div className="flex bg-[#f8f7f7] min-h-screen">
       <Sidebar />
-      <div className="w-full relative left-20">
+      <div className="w-full relative lg:left-[200px] md:left-[65px] left-[62px] ">
         <Admin />
         <div className="ml-10 mr-8 bg-[#ffffff] p-10 w-full min-h-screen m-10">
           {/* Header */}

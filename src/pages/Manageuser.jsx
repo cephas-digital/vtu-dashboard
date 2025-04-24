@@ -35,7 +35,7 @@ const Cms = () => {
   return (
     <div className="flex bg-[#f8f7f7] min-h-screen relative">
       <Sidebar />
-      <div className={`w-full transition duration-300 relative lg:left-[200px] md:left-[70px] left-[70px] ${showNotificationModal || showDisableUserModal ? 'opacity-30 pointer-events-none' : ''}`}>
+      <div className={`w-full transition duration-300 relative lg:left-[200px] md:left-[62px] left-[65px] ${showNotificationModal || showDisableUserModal ? 'opacity-30 pointer-events-none' : ''}`}>
         <Admin />
         <div className="my-10 ml-5  bg-white p-10 w-full min-h-screen">
           {/* Tabs */}

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import  logo from '../../assets/Cacr-icon.png';
 import Header from "../../components/Cacr-components/Header";
 import eyeoff from '../../Cacrassets/fi_eye-off.png'
 
+
 const Home = () => {
+  const navigate = useNavigate();
     const [Email,setEmail] = useState("");
     const [Password,setPassword] = useState("");
      const [showPassword,  setShowPasword] = useState(false)  
@@ -15,8 +17,7 @@ const Home = () => {
         alert("pls fill out all Details")
          return;
       }
-      alert("logging in")
-      console.log("logging in...");
+          navigate("/dashboard")
 
     }
 
@@ -41,7 +42,7 @@ const Home = () => {
      
       <div className="relative lg:w-[350px] md:w-[350px] w-[250px]  bg-[#f8f7f7] rounded-md  h-[50px]  ">
         <input 
-          type="text" 
+          type="email" 
           value={Email}  // ✅ Now controlled by state
           className="  h-[45px] bg-[#f8f7f7] px-12 md: w-[200px] lg:w-[200px] sm:w-[150px]  outline-none"
           placeholder="Email Address"

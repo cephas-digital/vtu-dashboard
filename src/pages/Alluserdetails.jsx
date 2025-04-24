@@ -32,7 +32,7 @@ const Alluserdetails = () => {
   return (
     <div className="flex bg-[#F9F9FA] min-h-screen">
       <Sidebar />
-      <div className="w-full relative lg:left-[200px] left-20">
+      <div className="w-full relative lg:left-[200px] left-14">
         <Admin />
         <div className='m-10'>
           {/* HEADER */}

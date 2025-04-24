@@ -47,7 +47,7 @@ const Settings = () => {
   return (
     <div className="flex  bg-[#f8f7f7] min-h-screen">
       <Sidebar />
-      <div className="w-full relative lg:left-[200px] md:left-[70px] left-[70px]  ">
+      <div className="w-full relative lg:left-[200px] md:left-[62px] left-[62px]   ">
         <Admin />
         <div className="my-10 lg:ml-10 md:ml-10 ml-5 mr-8 bg-white p-10 lg:w-[950px] md:w-[950px] w-screen  min-h-screen">
           {/* Header */}
@@ -62,7 +62,7 @@ const Settings = () => {
             <button onClick={handleSecurity} className='text-gray-400 hover:text-black lg:w-[150px] md:w-[150px] w-[70px]'>Security</button>
           </div>
 
-          <div className=' lg:flex md:flex grid justify-between mt-10'>
+          <div className=' lg:flex md:flex grid lg:justify-between md:gap-[380px] mt-10'>
             <h3 className='font-semibold'>Account Settings</h3>
             <button 
               className='w-[180px] h-[59px] my-2  rounded-md bg-[#3C60FF] text-white mr-10' 

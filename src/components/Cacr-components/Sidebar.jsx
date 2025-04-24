@@ -6,7 +6,7 @@ import settingsicon from '../../Cacrassets/Settings.png';
 import Supporticon from '../../Cacrassets/Support.png';
 import SalesIcon from '../../Cacrassets/Manage _Sales.png';
 import Notificationicon from '../../Cacrassets/Notifications.png';
-
+import { NavLink } from 'react-router-dom';
 import Logout from '../../Cacrassets/Logout.png';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -57,32 +57,32 @@ const Sidebar = () => {
       <div className="lg:mx-5 md:mx-3 mx-3">
         <div className="flex lg:gap-5 md:gap-3 gap-3 py-3 cursor-pointer" onClick={handleDashboard}>
           <img src={dashboardicon} alt="" className="w-[25px] h-[25px]" />
-          {isOpen && <Link to="/dashboard" className="text-blue-700">Dashboard</Link>}
+          {isOpen && <NavLink to="/dashboard" className={({ isActive})=> `w-[125px] ${isActive ? "text-blue-500" : "text-black"}`}>Dashboard</NavLink>}
         </div>
 
         <div className="flex lg:gap-5 md:gap-3 gap-3 py-3 cursor-pointer" onClick={handleUsers}>
           <img src={all_usericon} alt="" className="w-[25px] h-[25px]" />
-          {isOpen && <Link to="/Allusers">All Users</Link>}
+          {isOpen && <NavLink to="/Allusers" className={({ isActive})=> `w-[125px] ${isActive ? "text-blue-500" : "text-black"}`}>All Users</NavLink>}
         </div>
 
         <div className="flex lg:gap-5 md:gap-3 gap-3 py-3 cursor-pointer" onClick={handleSales}>
           <img src={SalesIcon} alt="" className="w-[25px] h-[25px]" />
-          {isOpen && <Link to="/Allsales" className="w-[125px]">Manage Sales</Link>}
+          {isOpen && <NavLink to="/Allsales" className={({ isActive})=> `w-[125px] ${isActive ? "text-blue-500" : "text-black"}`}>Manage Sales</NavLink>}
         </div>
 
         <div className="flex lg:gap-5 md:gap-3 gap-3 py-3 cursor-pointer"  onClick={handleMessages}>
           <img src={Supporticon} alt="" className="w-[25px] h-[25px]" />
-          {isOpen && <Link to="/Allmessages">Support</Link>}
+          {isOpen && <NavLink to="/Allmessages"  className={({ isActive})=> `w-[125px] ${isActive ? "text-blue-500" : "text-black"}`}>Support</NavLink>}
         </div>
 
         <div className="flex lg:gap-5 md:gap-3 gap-3 py-3 cursor-pointer" onClick={handleNotifications}>
           <img src={Notificationicon} alt="" className="w-[25px] h-[25px]" />
-          {isOpen && <Link to="/Allnotifications">Notification</Link>}
+          {isOpen && <NavLink to="/Allnotifications" className={({ isActive})=> `w-[125px] ${isActive ? "text-blue-500" : "text-black"}`}>Notification</NavLink>}
         </div>
 
         <div className="flex lg:gap-5 md:gap-3 gap-3 py-3 cursor-pointer" onClick={handleSettings}>
           <img src={settingsicon} alt="" className="w-[25px] h-[25px]" />
-          {isOpen && <Link to="/Settings">Settings</Link>}
+          {isOpen && <NavLink to="/Settings" className={({ isActive})=> `w-[125px] ${isActive ? "text-blue-500" : "text-black"}`}>Settings</NavLink>}
         </div>
       </div>
 

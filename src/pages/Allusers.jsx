@@ -19,7 +19,7 @@ const  Allusers = () => {
   return (
     <div className="flex bg-[#f8f7f7] min-h-screen">
       <Sidebar />
-      <div className="w-full relative lg:left-[200px] md:left-20 left-20">
+      <div className="w-full relative lg:left-[200px] md:left-14 left-16">
         <Admin />
          <div className=" lg:flex md:flex grid gap-5 items-center ml-10 mt-10">
                     <h3 className="font-bold py-2">All-Users</h3>
